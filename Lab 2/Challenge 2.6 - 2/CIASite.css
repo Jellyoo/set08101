@@ -1,0 +1,157 @@
+/* Colour Deafults
+    #B23850
+    #3B8BEB
+    #E7E3D4
+    #C4DBF6
+    #8590AA
+*/
+
+/* This section gives the header a YELLOW background colour */
+.header {
+  overflow: hidden;
+  background-color: #3B8BEB;
+  padding: 20px 10px;
+}
+
+/* This section sets the header with BLACK text and also assigns sizing and padding attributes */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 20px;
+  font-family: Tahoma;
+}
+
+/* Sets the Hover over colour to ORANGE */
+.header a:hover {
+  background-color: #B23850;
+  color: #EDF5E1;
+}
+
+/* Sets current selected page to RED */
+.header a.active {
+  background-color: #B23850;
+  color: #EDF5E1;
+}
+
+/* Sets the Header to the LEFT of the screen */
+.header-right {
+  float: left;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+    background: url('logo.png');
+}
+
+/* Sets the h1 text deafults */
+h1 {
+    color: #E7E3D4;
+    font-size: 60px;
+    text-align: center;
+    font-family: Tahoma;
+    padding: 12px;
+}
+
+/* Sets the h3 text deafults */
+h3 {
+    color: #E7E3D4;
+    font-size: 20px;
+    text-align: center;
+    font-family: Tahoma;
+    padding: 12px;
+    background-color: #05386B;
+     /* BOARDER AROUND TEXT ONLY */
+    border-radius: 20px;
+}
+
+/* Sets the html tag (entire page) deafults */
+html {
+    background-color: #3B8BEB;
+}
+
+/* Sets the paragraoh deafults */
+p {
+    font-family: Tahoma;
+    font-size: 20px;
+    color: #05386B;
+}
+
+#img1 {
+    max-width: 30px;
+    max-height: 30px;
+    float: left;
+    display: block;
+}
+
+#img2 {
+    max-width: 500x;
+    max-height: 500px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 20px solid #C4DBF6;
+    border-radius: 20px;
+    border-radius: 20px;
+}
+
+
+ol {
+    text-align: center;  
+    list-style-position: inside;
+}
+
+
+ol li {
+    padding: 5px;
+    margin-left: 35px;
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+
+
+
+
+/* This section gives the header a YELLOW background colour */
+.listR {
+  overflow: hidden;
+  background-color: #3B8BEB;
+  padding: 20px 10px;
+}
+
+/* This section sets the header with BLACK text and also assigns sizing and padding attributes */
+.listR a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 50px;
+  text-decoration: none;
+  font-size: 50px;
+  line-height: 25px;
+  border-radius: 20px;
+  font-family: Tahoma;
+}
+
+/* Sets the Hover over colour to ORANGE */
+.listR a:hover {
+  background-color: #B23850;
+  color: #EDF5E1;
+}
+
+/* Sets current selected page to RED */
+.listR a.active {
+  background-color: #B23850;
+  color: #E7E3D4;
+}
+
+/* Sets the Header to the LEFT of the screen */
+.listR-right {
+    float: left;
+}
+
