@@ -1,10 +1,10 @@
 [
     {
         "question": "Lewis Hamilton won his first Formula 1 World Championship in 2008, but by how many points?",
-        "choice1": '1',
-        "choice2": '2',
-        "choice3": '3',
-        "choice4": '4',
+        "choice1": "1",
+        "choice2": "2",
+        "choice3": "3",
+        "choice4": "4",
         "answer": 1,
     },
     {
