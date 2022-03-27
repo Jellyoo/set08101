@@ -1,6 +1,7 @@
 const question = document.getElementById('question');                                               /* Stores all questions under an element */
 const choices = Array.from(document.getElementsByClassName('choice-text'));                         /* Stores all question answer chocies in an array */
-
+const questionCounterText = document.getElementById("questionCounter");
+const scoreText = document.getElementById("score");
 
 
 
@@ -34,7 +35,7 @@ let questions = [
         choice2: "5",
         /*choice3: "<script src='xxx.js'>",
         choice4: "<script file='xxx.js'>",*/
-        answer: 3,
+        answer: 1,
     },
     {
         question: "Which are official Formula 1 tire compounds?",
@@ -42,7 +43,7 @@ let questions = [
         choice2: "Super Soft;",
         choice3: "Soft",
         choice4: "Super Medium",
-        answer: 4,
+        answer: 1,
     },
 ];
 
@@ -52,6 +53,7 @@ let questions = [
 
 /* ----- CONSTANTS ----- */
 /*const CORRECT_BONUS = 10;   */
+const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;                                                /* How many questions does a user get  */
 
 
@@ -81,6 +83,7 @@ startGame = () => {
     
     
     questionCounter++;                                                                  /* Incriment question count from startGame */
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);         /* Bases index variable on length of avalible questions array */
     currentQuestion = availableQuesions[questionIndex];                                 /* Sets current question to calculated avalible one */
     question.innerText = currentQuestion.question;                                      /* Sets question to the stored text from the array  */
@@ -111,6 +114,10 @@ startGame = () => {
             
             const classToApply =
               selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
+            
+                if (classToApply === "correct") {
+      incrementScore(CORRECT_BONUS);
+    }
 
             selectedChoice.parentElement.classList.add(classToApply);                   /* Appl;y to entire box elemnt on display */
 
@@ -120,5 +127,11 @@ startGame = () => {
         }, 1000);
         });
     });
+
+incrementScore = num => {
+  score += num;
+  scoreText.innerText = score;
+};
+
 
 startGame();
