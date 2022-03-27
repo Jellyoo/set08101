@@ -61,3 +61,23 @@
 .incorrect {
     background-color: #F71735;
 }
+
+
+
+
+
+
+/* ----- LIVE SCORE CSS ----- */
+#LiveScore {
+  display: flex;
+  justify-content: space-between;
+}
+
+.LS-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.LS-main-text {
+  text-align: center;
+}

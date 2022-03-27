@@ -110,12 +110,12 @@ startGame = () => {
             const selectedAnswer = selectedChoice.dataset['number'];
             
             const classToApply =
-              selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+              selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
 
-            selectedChoice.parentElement.classList.add(classToApply);
+            selectedChoice.parentElement.classList.add(classToApply);                   /* Appl;y to entire box elemnt on display */
 
             setTimeout(() => {
-              selectedChoice.parentElement.classList.remove(classToApply);
+              selectedChoice.parentElement.classList.remove(classToApply);              /* Remove class so it does not carry over to next question (confusing) */
             getNewQuestion();                                                           /* Restart */
         }, 1000);
         });
