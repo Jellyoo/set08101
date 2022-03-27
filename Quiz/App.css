@@ -1,121 +1,127 @@
-/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework CSS Style Sheet For Quiz */
-/* Colour ID Reference Table
-    Backgrounds (Dark Navy) -       #011627
-    Something (Bright Red) - -      #F71735
-    Something (Cyan Bright Blue) -  #41EAD4
-    Text (White) -                  #FDFFFC
-    Something (Yellow) -            #FF9F1C
-
-    Question GREEN (Correct) -      #04A777
-    Question RED (Wrong) -          #F71735
-    Question Blue (Hover) -         #4CC9F0
-    Question (ABCD) -               #4361EE
-
-    (Created at coolors.co)
-*/
-
-
-
-
-
-/* ----- GENERAL QUIZ CSS ----- */
-/* Overall Page Settings */
 :root {
-    background-color: #011627;
-    font-size: 62.5%;
+  background-color: #ecf5ff;
+  font-size: 62.5%;
 }
 
-/* Overall Page Settings */
 * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
 }
 
-
-
-
-
-/* ----- Text Quiz CSS ----- */
 h1,
 h2,
 h3,
 h4 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 5.4rem;
-    color: #56a5eb;
-    margin-bottom: 5rem;
+  font-size: 5.4rem;
+  color: #56a5eb;
+  margin-bottom: 5rem;
 }
 
 h1 > span {
-    font-size: 2.4rem;
-    font-weight: 500;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-    font-weight: 700;
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 2.8rem;
-    font-weight: 500;
+  font-size: 2.8rem;
+  font-weight: 500;
 }
 
+/* UTILITIES */
 
-
-
-
-/* ----- QUIZ BOX CSS (Copied from mains ite ins ome cases, some may be redundant) ----- */
-/* Where the container for the quiz should be on the page (centre) */
 .container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* Background (White) Should over rule * css */
 .container > * {
-    width: 100%;
-    background-color: #FDFFFC;
-    border-radius: 8px;
-    padding: 2rem;
+  width: 100%;
 }
 
-/* Flexbox (column) setting its direction to vertical (on top of each other) */
 .flex-column {
   display: flex;
   flex-direction: column;
 }
 
-/* Allign items to centre */
 .flex-center {
   justify-content: center;
   align-items: center;
 }
 
-/* Allign centre */
 .justify-center {
   justify-content: center;
 }
 
-/* Allign text centre */
 .text-center {
   text-align: center;
 }
 
-/* Hides stuff (duh) */
 .hidden {
   display: none;
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.1rem solid #56a5eb;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #56a5eb;
+  background-color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
 }
