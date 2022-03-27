@@ -1,0 +1,26 @@
+[
+    {
+        question: "Lewis Hamilton won his first Formula 1 World Championship in 2008, but by how many points?",
+        choice1: '1',
+        choice2: '2',
+        choice3: '3',
+        choice4: '4',
+        answer: 1,
+    },
+    {
+        question:"Lewis Hamilton has won How many championships?",
+        choice1: "8",
+        choice2: "5",
+        choice3: "7",
+        choice4: "1",
+        answer: 3,
+    },
+    {
+        question: "Which is an official Formula 1 tire compound?",
+        choice1: "Ultra Medium",
+        choice2: "Super Soft",
+        choice3: "Soft",
+        choice4: "Super Medium",
+        answer: 3,
+    },
+];

@@ -1,7 +1,7 @@
 const question = document.getElementById('question');                                               /* Stores all questions under an element */
 const choices = Array.from(document.getElementsByClassName('choice-text'));                         /* Stores all question answer chocies in an array */
-const questionCounterText = document.getElementById("questionCounter");
-const scoreText = document.getElementById("score");
+const questionCounterText = document.getElementById("questionCounter");                             /* Stores Number of questions answered for visual display */
+const scoreText = document.getElementById("score");                                                 /* Stores user score for visualisation */
 
 
 
@@ -29,21 +29,20 @@ let questions = [
         answer: 1,
     },
     {
-        question:
-            "Lewis Hamilton has won How many championships?",
-        choice1: "7",
+        question:"Lewis Hamilton has won How many championships?",
+        choice1: "8",
         choice2: "5",
-        /*choice3: "<script src='xxx.js'>",
-        choice4: "<script file='xxx.js'>",*/
-        answer: 1,
+        choice3: "7",
+        choice4: "1",
+        answer: 3,
     },
     {
-        question: "Which are official Formula 1 tire compounds?",
-        choice1: "Medium",
-        choice2: "Super Soft;",
+        question: "Which is an official Formula 1 tire compound?",
+        choice1: "Ultra Medium",
+        choice2: "Super Soft",
         choice3: "Soft",
         choice4: "Super Medium",
-        answer: 1,
+        answer: 3,
     },
 ];
 
@@ -52,8 +51,7 @@ let questions = [
 
 
 /* ----- CONSTANTS ----- */
-/*const CORRECT_BONUS = 10;   */
-const CORRECT_BONUS = 10;
+const CORRECT_MARK = 1;                                                 /* How many points for a correct answer */
 const MAX_QUESTIONS = 3;                                                /* How many questions does a user get  */
 
 
@@ -116,7 +114,7 @@ startGame = () => {
               selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
             
                 if (classToApply === "correct") {
-      incrementScore(CORRECT_BONUS);
+      incrementScore(CORRECT_MARK);
     }
 
             selectedChoice.parentElement.classList.add(classToApply);                   /* Appl;y to entire box elemnt on display */
