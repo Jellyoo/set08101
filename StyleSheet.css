@@ -224,7 +224,6 @@ p {
     max-height: 300px;
     background-color: #F71735;
     border-radius: 15px;
-    border: 8px solid #F71735;
 }
 
 /* FlexBox 4 img - Located on Home.html */
@@ -312,7 +311,7 @@ p {
 
 
 
-/* ----- Quiz Entry ----- */
+/* ----- Quiz Entry Page CSS ----- */
 
 /* Attributes for box containing the buttons */
 .container {
@@ -323,30 +322,36 @@ p {
     padding: 100px;
 }
 
+/* Background (White) Should over rule * css */
 .container > * {
     width: 100%;
 }
 
+/* Flexbox (column) setting its direction to vertical (on top of each other) */
 .flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Allign items to centre */
 .flex-center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Allign centre */
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
+/* Allign text centre */
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
+/* Hides stuff (duh) */
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* Button Specific Styling */
