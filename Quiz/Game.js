@@ -44,6 +44,46 @@ let questions = [
         choice4: "Super Medium",
         answer: 3,
     },
+    {
+        question: "2010 saw Nico Hulkenberg grab his first – and to date only – pole position. But where did the German finish the race?",
+        choice1: "1st",
+        choice2: "3rd",
+        choice3: "8th",
+        choice4: "He did not finish",
+        answer: 3,
+    },
+    {
+        question: "The 2012 European Grand Prix was held at which venue?",
+        choice1: "Slverstone",
+        choice2: "Imola",
+        choice3: "Germany",
+        choice4: "Valencia",
+        answer: 4,
+    },
+    {
+        question: "Which are previous Formula 1 Teams?",
+        choice1: "Force China",
+        choice2: "Modena",
+        choice3: "Bro GP",
+        choice4: "Bennyton GP",
+        answer: 2,
+    },
+    {
+        question: "Honda’s F1 team changed name to ____ GP in 2009?",
+        choice1: "Brawn",
+        choice2: "Honda 2.0",
+        choice3: "Power of JapanP",
+        choice4: "Bennaton",
+        answer: 1,
+    },
+    {
+        question: "Markus ____ had his single Grand Prix outing in the 1007 European GP",
+        choice1: "Rashford",
+        choice2: "Button",
+        choice3: "Perez",
+        choice4: "Winkelhock",
+        answer: 4,
+    },
 ];
 
 

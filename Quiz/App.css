@@ -44,28 +44,41 @@ h2,
 h3,
 h4 {
     margin-bottom: 1rem;
+    color: #011627;
+    text-align: center;
+    font-family: Tahoma;
 }
 
 h1 {
     font-size: 5.4rem;
-    color: #56a5eb;
+    color: #011627;
     margin-bottom: 5rem;
+    font-family: Tahoma;
+    
 }
 
 h1 > span {
     font-size: 2.4rem;
     font-weight: 500;
+    font-family: Tahoma;
 }
 
 h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
     font-weight: 700;
+    font-family: Tahoma;
 }
 
 h3 {
     font-size: 2.8rem;
     font-weight: 500;
+    font-family: Tahoma;
+}
+
+p {
+    color: #011627;
+    font-family: Tahoma;
 }
 
 
