@@ -18,7 +18,7 @@ let availableQuesions = [];                                                     
 
 
 /* ----- ALL QUESTIONS ----- */
-/* Each question is stored as an object, */
+/* Each question is stored as an object, 15 Questions randomly picked by below code */
 let questions = [
     {
         question: "Lewis Hamilton won his first Formula 1 World Championship in 2008, but by how many points?",
@@ -45,7 +45,7 @@ let questions = [
         answer: 3,
     },
     {
-        question: "2010 saw Nico Hulkenberg grab his first – and to date only – pole position. But where did the German finish the race?",
+        question: "2010 saw Nico Hulkenberg grab his first and to date only pole position. But where did the German finish the race?",
         choice1: "1st",
         choice2: "3rd",
         choice3: "8th",
@@ -69,7 +69,7 @@ let questions = [
         answer: 2,
     },
     {
-        question: "Honda’s F1 team changed name to ____ GP in 2009?",
+        question: "Hondas F1 team changed name to ____ GP in 2009?",
         choice1: "Brawn",
         choice2: "Honda 2.0",
         choice3: "Power of JapanP",
@@ -117,7 +117,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: "What is the nickname of Ferrari – one of the most successful racing teams in F1 history?",
+        question: "What is the nickname of Ferrari one of the most successful racing teams in F1 history?",
         choice1: "The Dancing Donkey",
         choice2: "The Prancing Pony",
         choice3: "The Prancing Horse",
@@ -225,9 +225,9 @@ startGame = () => {
     });
 
     incrementScore = num => {                                                           /* Changes start game score variable */
-      score += num;
+      score += num;                                                                     /* Is it equall to a number? */
       scoreText.innerText = score;
     };
 
 
-startGame();
+startGame();                                                                            /* Forces the start the entire quiz */

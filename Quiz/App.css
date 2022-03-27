@@ -1,4 +1,4 @@
-/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework CSS Style Sheet For Quiz */
+/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework, CSS for Quiz ONLY */
 /* Colour ID Reference Table
     Backgrounds (Dark Navy) -       #011627
     Something (Bright Red) - -      #F71735
@@ -12,6 +12,8 @@
     Question (ABCD) -               #4361EE
 
     (Created at coolors.co)
+
+    Use of rem found to be better for cross device scaling and thus used in this css
 */
 
 
@@ -108,29 +110,111 @@ p {
 
 /* Flexbox (column) setting its direction to vertical (on top of each other) */
 .flex-column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Allign items to centre */
 .flex-center {
-  justify-content: center;
-  align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Allign centre */
 .justify-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 /* Allign text centre */
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 /* Hides stuff (duh) */
 .hidden {
-  display: none;
+    display: none;
+}
+
+
+
+
+
+/* ----- Quiz Box Dislay CSS SETTINGS ----- */
+/* The Box which an answer is contained in */
+.choice-container {
+    display: flex;                                                    /* Flex Box Display */
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    background-color: white;
+    border-radius: 15px;
+    border: 5px solid #011627;
+}
+
+/* What happen when a answer box is hovered over */
+.choice-container:hover {
+    background-color: #F71735;
+    color: #FDFFFC;
+    background-color: #4CC9F0;
+}
+
+/* Answer (ABCD) Box */
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #4361EE;
+    color: #FDFFFC;
+    border-radius: 8px;
+}
+
+/* Box which answer TEXT is displayed in */
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+/* Correct answer overlay */
+.correct {
+    background-color: #04A777;
+}
+
+/* Incorrecy answer overlay */
+.incorrect {
+    background-color: #F71735;
+}
+
+
+
+
+
+/* ----- LIVE SCORE CSS ----- */
+/* On right of progress bar using flexboxes */
+#LiveScore {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Question and score text */
+.LS-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.LS-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 65rem;
+    height: 4rem;
+    border: 0.3rem solid #011627;
+    background-color: #F71735;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #04A777;
+    width: 0%;
 }
 
 
@@ -152,4 +236,46 @@ input {
     padding: 1.5rem;
     font-size: 1.8rem;
     border: solid #011627;
+}
+
+
+
+
+
+/* ----- Highscres CSS Settings ----- */
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.025);
+}
+
+/* Button Specific Styling FOR END.html */
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #FDFFFC;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #FDFFFC;
+    border-radius: 15px;
+    background-color: #011627;
+}
+
+/* Button Styling when moused over */
+.btn:hover {
+    background-color: #F71735;
+    color: #FDFFFC;
+    background-color: #F71735;
+    border-radius: 15px;
 }
