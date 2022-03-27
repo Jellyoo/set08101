@@ -21,19 +21,20 @@ let availableQuesions = [];                                                     
 /* Each question is stored as an object, */
 let questions = [];
 
-fetch('questions.json')
-    .then((res) => {
+fetch("questions.json")
+    .then(res => {
         return res.json();
-    })
-    .then((loadedQuestions) => {
-        questions = loadedQuestions;
-        startGame();
-    })
-    .catch((err) => {
-        console.error(err);
-    });
+})
 
+.then(loadedQuestions => {
+    console.log(loadedQuestions);
+    questions = loadedQuestions;
+    startGame();
+})
 
+.catch(err => {
+    console.error(err);
+})
 
 
 
