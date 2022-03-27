@@ -108,7 +108,16 @@ startGame = () => {
             acceptingAnswers = false;                                                   /* Changes to stop answers being submitted */
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];
+            
+            const classToApply =
+              selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
+
+            selectedChoice.parentElement.classList.add(classToApply);
+
+            setTimeout(() => {
+              selectedChoice.parentElement.classList.remove(classToApply);
             getNewQuestion();                                                           /* Restart */
+        }, 1000);
         });
     });
 
