@@ -74,6 +74,7 @@ startGame = () => {
 /* ----- CALLED TO BEGIN NEW QUESTION ----- */
     getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {           /* If questions finished go to the final end hyml page */
+        localStorage.setItem("mostRecentScore", score);
         return window.location.assign('End.html');                                     /* take to End html page */
     }
     

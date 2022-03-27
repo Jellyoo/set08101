@@ -119,3 +119,24 @@ h3 {
 .hidden {
   display: none;
 }
+
+
+
+
+/* ----- END FORM CSS ---- */
+/* Gneral input box styling */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* When windows clicked on */
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: solid #011627;
+}
