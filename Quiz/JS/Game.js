@@ -110,14 +110,13 @@ startGame = () => {
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];
             
-            const classToApply =
-              selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
+            const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
             
-                if (classToApply === "correct") {
-      incrementScore(CORRECT_MARK);
-    }
+            if (classToApply === "correct") {
+                incrementScore(CORRECT_MARK);                                           /* Apply coorect mark constant to the score display */
+            }
 
-            selectedChoice.parentElement.classList.add(classToApply);                   /* Appl;y to entire box elemnt on display */
+            selectedChoice.parentElement.classList.add(classToApply);                   /* Apply to entire box elemnt on display */
 
             setTimeout(() => {
               selectedChoice.parentElement.classList.remove(classToApply);              /* Remove class so it does not carry over to next question (confusing) */
@@ -126,10 +125,10 @@ startGame = () => {
         });
     });
 
-incrementScore = num => {
-  score += num;
-  scoreText.innerText = score;
-};
+    incrementScore = num => {                                                           /* Changes start game score variable */
+      score += num;
+      scoreText.innerText = score;
+    };
 
 
 startGame();
