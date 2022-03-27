@@ -1,8 +1,8 @@
 const question = document.getElementById('question');                                               /* Stores all questions under an element */
 const choices = Array.from(document.getElementsByClassName('choice-text'));                         /* Stores all question answer chocies in an array */
-const questionCounterText = document.getElementById("questionCounter");                             /* Stores Number of questions answered for visual display */
+const progressText = document.getElementById("questionCounter");                                    /* Stores Number of questions answered for visual display */
 const scoreText = document.getElementById("score");                                                 /* Stores user score for visualisation */
-
+const progressBarFull = document.getElementById("progressBarFull");                                 /* Constant for full bar */
 
 
 
@@ -74,14 +74,15 @@ startGame = () => {
 /* ----- CALLED TO BEGIN NEW QUESTION ----- */
     getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {           /* If questions finished go to the final end hyml page */
-        //go to the end page
-        return window.location.assign('/end.html');
+        return window.location.assign('End.html');                                     /* take to End html page */
     }
     
     
     
     questionCounter++;                                                                  /* Incriment question count from startGame */
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;        /* Convert to percentage and display withinn the div */
+        
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);         /* Bases index variable on length of avalible questions array */
     currentQuestion = availableQuesions[questionIndex];                                 /* Sets current question to calculated avalible one */
     question.innerText = currentQuestion.question;                                      /* Sets question to the stored text from the array  */

@@ -69,15 +69,28 @@
 
 /* ----- LIVE SCORE CSS ----- */
 #LiveScore {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .LS-prefix {
-  text-align: center;
-  font-size: 2rem;
+    text-align: center;
+    font-size: 2rem;
 }
 
 .LS-main-text {
-  text-align: center;
+    text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid #56a5eb;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: #56a5eb;
+  width: 0%;
 }
