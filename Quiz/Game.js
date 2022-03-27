@@ -19,29 +19,137 @@ let availableQuesions = [];                                                     
 
 /* ----- ALL QUESTIONS ----- */
 /* Each question is stored as an object, */
-let questions = [];
+let questions = [
+    {
+        question: "Lewis Hamilton won his first Formula 1 World Championship in 2008, but by how many points?",
+        choice1: "1",
+        choice2: "2",
+        choice3: "3",
+        choice4: "4",
+        answer: 1,
+    },
+    {
+        question:"Lewis Hamilton has won How many championships?",
+        choice1: "8",
+        choice2: "5",
+        choice3: "7",
+        choice4: "1",
+        answer: 3,
+    },
+    {
+        question: "Which is an official Formula 1 tire compound?",
+        choice1: "Ultra Medium",
+        choice2: "Super Soft",
+        choice3: "Soft",
+        choice4: "Super Medium",
+        answer: 3,
+    },
+    {
+        question: "2010 saw Nico Hulkenberg grab his first – and to date only – pole position. But where did the German finish the race?",
+        choice1: "1st",
+        choice2: "3rd",
+        choice3: "8th",
+        choice4: "He did not finish",
+        answer: 3,
+    },
+    {
+        question: "The 2012 European Grand Prix was held at which venue?",
+        choice1: "Slverstone",
+        choice2: "Imola",
+        choice3: "Germany",
+        choice4: "Valencia",
+        answer: 4,
+    },
+    {
+        question: "Which are previous Formula 1 Teams?",
+        choice1: "Force China",
+        choice2: "Modena",
+        choice3: "Bro GP",
+        choice4: "Bennyton GP",
+        answer: 2,
+    },
+    {
+        question: "Honda’s F1 team changed name to ____ GP in 2009?",
+        choice1: "Brawn",
+        choice2: "Honda 2.0",
+        choice3: "Power of JapanP",
+        choice4: "Bennaton",
+        answer: 1,
+    },
+    {
+        question: "Markus ____ had his single Grand Prix outing in the 2007 European GP",
+        choice1: "Rashford",
+        choice2: "Button",
+        choice3: "Perez",
+        choice4: "Winkelhock",
+        answer: 4,
+    },
+    {
+        question: "The Marina Bay Street Circuit is the street circuit for which country's Grand Prix?",
+        choice1: "Monaco",
+        choice2: "Saudi Arabia",
+        choice3: "Singapore",
+        choice4: "Baku",
+        answer: 3,
+    },
+    {
+        question: "How many points are awarded to the race winner of each Grand Prix?",
+        choice1: "4 Every Alternating Tuesday",
+        choice2: "7 Bread Sticks With Cheese",
+        choice3: "10 points",
+        choice4: "25 points",
+        answer: 4,
+    },
+    {
+        question: "How many tracks are there int he 2022 calander?",
+        choice1: "22",
+        choice2: "20",
+        choice3: "21",
+        choice4: "24",
+        answer: 1,
+    },
+    {
+        question: "How many 2022 races are base din Italy?",
+        choice1: "4",
+        choice2: "3",
+        choice3: "1",
+        choice4: "2",
+        answer: 4,
+    },
+    {
+        question: "What is the nickname of Ferrari – one of the most successful racing teams in F1 history?",
+        choice1: "The Dancing Donkey",
+        choice2: "The Prancing Pony",
+        choice3: "The Prancing Horse",
+        choice4: "The Prancing Breadstick",
+        answer: 3,
+    },
+    {
+        question: "How many teams are in the 2022 season?",
+        choice1: "5",
+        choice2: "8",
+        choice3: "10",
+        choice4: "12",
+        answer: 3,
+    },
+    {
+        question: "How many drivers are in the 2022 season?",
+        choice1: "10",
+        choice2: "22",
+        choice3: "24",
+        choice4: "20",
+        answer: 4,
+    },
+    
+];
 
-fetch("questions.json")
-    .then(res => {
-        return res.json();
-})
-
-.then(loadedQuestions => {
-    console.log(loadedQuestions);
-    questions = loadedQuestions;
-    startGame();
-})
-
-.catch(err => {
-    console.error(err);
-})
 
 
 
 
 /* ----- CONSTANTS ----- */
 const CORRECT_MARK = 1;                                                 /* How many points for a correct answer */
-const MAX_QUESTIONS = 8;                                                /* How many questions does a user get  */
+const MAX_QUESTIONS = 15;                                                /* How many questions does a user get  */
 
 
 
@@ -122,3 +230,4 @@ startGame = () => {
     };
 
 
+startGame();
