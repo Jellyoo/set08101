@@ -77,7 +77,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: "Markus ____ had his single Grand Prix outing in the 1007 European GP",
+        question: "Markus ____ had his single Grand Prix outing in the 2007 European GP",
         choice1: "Rashford",
         choice2: "Button",
         choice3: "Perez",
@@ -92,7 +92,7 @@ let questions = [
 
 /* ----- CONSTANTS ----- */
 const CORRECT_MARK = 1;                                                 /* How many points for a correct answer */
-const MAX_QUESTIONS = 3;                                                /* How many questions does a user get  */
+const MAX_QUESTIONS = 8;                                                /* How many questions does a user get  */
 
 
 
