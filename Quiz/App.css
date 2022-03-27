@@ -199,10 +199,7 @@ p {
     font-size: 2rem;
 }
 
-.LS-main-text {
-    text-align: center;
-}
-
+/* Bar normal settings */
 #progressBar {
     width: 65rem;
     height: 4rem;
@@ -211,6 +208,7 @@ p {
     margin-top: 1.5rem;
 }
 
+/* Bar overlay (green prgress showing to user) */
 #progressBarFull {
     height: 3.4rem;
     background-color: #04A777;
@@ -247,16 +245,24 @@ input {
     list-style: none;
     padding-left: 0;
     margin-bottom: 4rem;
+    border: 1rem solid #011627;
+    text-decoration: none;
+    color: #011627;
+    border-radius: 15px;
+    background-color: #FDFFFC;
+    padding: 30px;
 }
 
 .high-score {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
+    border: 0.5rem solid #011627;
+    text-decoration: none;
+    color: #011627;
+    border-radius: 15px;
+    font-weight: 600;
 }
 
-.high-score:hover {
-    transform: scale(1.025);
-}
 
 /* Button Specific Styling FOR END.html */
 .btn {

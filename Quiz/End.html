@@ -1,37 +1,52 @@
+<!-- Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework -->
+
 <!DOCTYPE html>
 <html lang="en">
+    
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Congrats!</title>
+    <title>Quiz Complete!</title>
     <link rel="stylesheet" href="App.css" />
   </head>
+    
+    
   <body>
+      
     <div class="container">
+        
       <div id="end" class="flex-center flex-column">
+          
         <h1 id="finalScore"></h1>
-        <form>
-          <input
-            type="text"
-            name="username"
-            id="username"
-            placeholder="username"
-          />
-          <button
-            type="submit"
-            class="btn"
-            id="saveScoreBtn"
-            onclick="saveHighScore(event)"
-            disabled
-          >
-            Save
-          </button>
-        </form>
+          
+            <form>                                                              <!-- Initiates username input box and corresponding save button and css stylings -->
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="username"
+              />
+              <button
+                type="submit"
+                class="btn"
+                id="saveScoreBtn"
+                onclick="saveHighScore(event)"
+                disabled
+              >
+                Save
+              </button>
+            </form>
+          
+          
+        <!-- Buttons which link to other html pages, same as on mains ite quiz.html -->
         <a class="btn" href="Game.html">Re Take</a>
         <a class="btn" href="../index.html">Homepage</a>
+          
       </div>
+        
     </div>
-    <script src="End.js"></script>
+      
+      
+    <script src="End.js"></script>                                              <!-- Links to End SJ scirpt -->
+      
   </body>
+    
 </html>

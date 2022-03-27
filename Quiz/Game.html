@@ -1,3 +1,5 @@
+<!-- Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework -->
+
 <!DOCTYPE html>
 <html lang="en">
     
@@ -8,27 +10,41 @@
     
     
   <body>
-    <div class="container">
-      <div id="game" class="justify-center flex-column">
-        <div id="LiveScore">
-          <div id="LS-item">
-            <p class="LS-prefix">
-              Current Question
-            </p>
-            <div id="progressBar">
-              <div id="progressBarFull"></div>
+      
+    <div class="container">                                                                     <!-- Creates the area for the progress bar and live core box Links to CSS etc -->
+
+        
+        <div id="game" class="justify-center flex-column">
+
+            <div id="LiveScore">
+
+              <div>
+                  
+                <p class="LS-prefix">                                                           <!-- Progress bar -->
+                  Current Question
+                </p>
+                <div id="progressBar">
+                  <div id="progressBarFull"></div>
+                </div>
+                <h1 id="questionCounter"></h1>
+                  
+              </div>
+
+              <div>
+                  
+                <p class="LS-prefix">                                                           <!-- Live score box -->
+                  Score
+                </p>
+                <h1 class="LS-main-text" id="score">
+                  0
+                </h1>
+                  
+              </div>
+
             </div>
-            <h1 class="LS-main-text" id="questionCounter"></h1>
-          </div>
-          <div id="LS-item">
-            <p class="LS-prefix">
-              Score
-            </p>
-            <h1 class="LS-main-text" id="score">
-              0
-            </h1>
-          </div>
-        </div>
+          
+            
+        <!-- Deafult Errored question display (formats question display 1Q 4Options) -->   
         <h2 id="question">Quesation Unavailable</h2>
         <div class="choice-container">
           <p class="choice-prefix">A</p>
@@ -47,10 +63,12 @@
           <p class="choice-text" data-number="4">Answer Unavailable</p>
         </div>
       </div>
+        
+        
     </div>
       
       
-    <script src="Game.js"></script>
+    <script src="Game.js"></script>                                                             <!-- Links to Game Java script file to allow score/prgres bar/question functions -->
       
   </body>
     

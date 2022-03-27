@@ -1,3 +1,5 @@
+/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework */
+
 const question = document.getElementById('question');                                               /* Stores all questions under an element */
 const choices = Array.from(document.getElementsByClassName('choice-text'));                         /* Stores all question answer chocies in an array */
 const progressText = document.getElementById("questionCounter");                                    /* Stores Number of questions answered for visual display */
@@ -101,7 +103,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: "How many tracks are there int he 2022 calander?",
+        question: "How many tracks are there in the 2022 calander?",
         choice1: "22",
         choice2: "20",
         choice3: "21",
@@ -109,7 +111,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: "How many 2022 races are base din Italy?",
+        question: "How many 2022 races are based in Italy?",
         choice1: "4",
         choice2: "3",
         choice3: "1",
@@ -148,7 +150,7 @@ let questions = [
 
 
 /* ----- CONSTANTS ----- */
-const CORRECT_MARK = 1;                                                 /* How many points for a correct answer */
+const CORRECT_SCORE = 1;                                                 /* How many points for a correct answer */
 const MAX_QUESTIONS = 15;                                                /* How many questions does a user get  */
 
 
@@ -212,7 +214,7 @@ startGame = () => {
             const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
             
             if (classToApply === "correct") {
-                incrementScore(CORRECT_MARK);                                           /* Apply coorect mark constant to the score display */
+                incrementScore(CORRECT_SCORE);                                           /* Apply coorect mark constant to the score display */
             }
 
             selectedChoice.parentElement.classList.add(classToApply);                   /* Apply to entire box elemnt on display */
