@@ -1,4 +1,4 @@
-/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework, CSS for Quiz ONLY */
+/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework */
 /* Colour ID Reference Table
     Backgrounds (Dark Navy) -       #011627
     Something (Bright Red) - -      #F71735
@@ -81,6 +81,9 @@ h3 {
 p {
     color: #011627;
     font-family: Tahoma;
+}
+h100 {
+    font-size: 0;
 }
 
 
@@ -201,7 +204,7 @@ p {
 
 /* Bar normal settings */
 #progressBar {
-    width: 65rem;
+    width: 72rem;
     height: 4rem;
     border: 0.3rem solid #011627;
     background-color: #F71735;
@@ -241,7 +244,8 @@ input {
 
 
 /* ----- Highscres CSS Settings ----- */
-#highScoresList {
+/* CSS styling to table of bullet points from the stored list array */
+#leaderboardList {
     list-style: none;
     padding-left: 0;
     margin-bottom: 4rem;

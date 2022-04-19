@@ -1,10 +1,19 @@
-/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework CSS Style Sheet */
+/* Elliot Mackenzie Bruce, (ID) , Web Technologies Coursework */
 /* Colour ID Reference Table
     Backgrounds (Dark Navy) -       #011627
     Something (Bright Red) - -      #F71735
     Something (Cyan Bright Blue) -  #41EAD4
     Text (White) -                  #FDFFFC
     Something (Yellow) -            #FF9F1C
+
+    Question GREEN (Correct) -      #04A777
+    Question RED (Wrong) -          #F71735
+    Question Blue (Hover) -         #4CC9F0
+    Question (ABCD) -               #4361EE
+
+    (Created at coolors.co)
+
+    Use of px used before finding sof rem when building quiz css, px is used here to prevent breaking current functions
 */
 
 

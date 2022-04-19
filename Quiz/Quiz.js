@@ -161,7 +161,7 @@ const MAX_QUESTIONS = 15;                                                /* How 
 startGame = () => {
     questionCounter = 0;                                                /* Reset question counter */
     score = 0;                                                          /* Users score for this game */
-    availableQuesions = [...questions];                                 /* [...questions] Takes each item fromt he array and spreads them into a new array (avalible Q's) Copies questions from storage array into live quuiz */
+    availableQuesions = [...questions];                                 /* [...questions] Takes each item from the array and spreads them into a new array (avalible Q's) Copies questions from storage array into live quuiz */
     getNewQuestion();                                                   /* Function  */
 };
 
@@ -205,13 +205,13 @@ startGame = () => {
 
     choices.forEach((choice) => {                                                       /*  */
         choice.addEventListener('click', (e) => {                                       /* Stores which question clicked */
-            if (!acceptingAnswers) return;                                              /* If loop */
+            if (!acceptingAnswers) return;                                              /* If loop for wheter to accept answers */
 
             acceptingAnswers = false;                                                   /* Changes to stop answers being submitted */
             const selectedChoice = e.target;
             const selectedAnswer = selectedChoice.dataset['number'];
             
-            const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness */
+            const classToApply = selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";       /* Apply css class based on answer correctness green red */
             
             if (classToApply === "correct") {
                 incrementScore(CORRECT_SCORE);                                           /* Apply coorect mark constant to the score display */
